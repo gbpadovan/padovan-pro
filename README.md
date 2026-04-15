@@ -1,49 +1,56 @@
-# Portfolio - Desenvolvedor Python & Data Science
+# PADOVAN.PRO - Portfolio Profissional
 
-Um lindo website de portfólio moderno e responsivo para demonstrar projetos e habilidades de um desenvolvedor especializado em Python e Data Science.
+Um website de portfólio moderno, responsivo e interativo para Gustavo Padovan, desenvolvedor especializado em Python, Data Science e desenvolvimento full-stack.
 
 ## 🚀 Tecnologias Utilizadas
 
-- **Next.js 14** - Framework React com SSR
-- **React 18** - Biblioteca de UI
-- **TypeScript** - Tipagem estática
-- **Tailwind CSS** - Estilização utilitária
+- **Next.js 16.2.3** - Framework React com SSR e Turbopack
+- **React 19.2.0** - Biblioteca de UI
+- **TypeScript 6.0.0** - Tipagem estática
+- **Tailwind CSS 3.4.0** - Estilização utilitária
 - **shadcn/ui** - Componentes reutilizáveis
-- **Lucide React** - Ícones modernos
+- **Lucide React 0.408.0** - Ícones modernos
+- **Class Variance Authority** - Gerenciamento de variantes CSS
+- **Tailwind Merge** - Merge inteligente de classes Tailwind
 
 ## 📋 Funcionalidades
 
 - ✨ Design moderno com gradientes e efeitos visuais
 - 📱 Totalmente responsivo (mobile, tablet, desktop)
 - 🎨 Tema dark mode por padrão
-- ⚡ Performance otimizada
+- ⚡ Performance otimizada com Turbopack
 - 🔗 Navegação suave entre páginas
-- 📊 Seção de projetos com cards interativos
-- 👤 Página sobre com experiência e educação
-- 📧 Seção de contato
+- 📊 Seção de projetos com 13+ projetos reais
+- 🔍 Sistema de filtros (Projetos Python / Outros Projetos)
+- 👤 Página sobre com experiência, educação e credenciais
+- � Integração LinkedIn para contato direto
 
 ## 🏠 Páginas
 
 ### Home
-- Hero section com apresentação
-- Estatísticas principais
-- Seção de tecnologias e skills com barras de progresso
+- Hero section com apresentação profissional
+- Estatísticas: 10+ Projetos, FEA-USP, Ironhack
+- Seção de tecnologias e skills (Python, Django, PostgreSQL, Docker, AWS, Git)
+- Call-to-action para explorar projetos
 
 ### Projetos
-- Grid de 6 projetos em destaque
-- Cards com descrição, tags e links
-- Botões para GitHub e Demo
+- 13+ projetos reais organizados por ano (2019-2026)
+- Sistema de filtros interativos (Todos, Projetos Python, Outros Projetos)
+- Cards com descrição, tags de tecnologia e links
+- Projetos incluem: Data Science, Web Scraping, Smart Contracts, MatchGenius e mais
+- Botões para GitHub (quando público) e Demo
 
 ### Sobre
-- Biografia detalhada
-- Experiência profissional
-- Educação e certificações
-- Links de contato (Email, LinkedIn, GitHub)
+- Apresentação: Gustavo Padovan
+- Formação: Administração (FEA-USP, 2010) e Data Analytics (Ironhack, 2019)
+- Experiência: Projetos pessoais como demonstração de habilidades
+- Busca por posição Junior em Python e Data Science
+- Links diretos para LinkedIn e GitHub
 
 ## 🛠️ Instalação
 
 ### Pré-requisitos
-- Node.js 18+ 
+- Node.js 18+ (recomendado 20+)
 - npm ou yarn
 
 ### Passos
@@ -84,15 +91,21 @@ Edite as variáveis CSS em `app/globals.css`:
 ```
 
 ### Conteúdo
-- **Home**: Edite `app/page.tsx`
-- **Projetos**: Edite `app/projects/page.tsx` (array `projects`)
-- **Sobre**: Edite `app/about/page.tsx`
-- **Navegação**: Edite `components/Navigation.tsx`
+- **Home**: Edite `app/page.tsx` para alterar apresentação e estatísticas
+- **Projetos**: Edite `app/projects/page.tsx` para adicionar/remover projetos
+  - Adicione projetos ao objeto `projectsByYear`
+  - Defina `category: 'python'` ou `category: 'outros'` para filtros
+- **Sobre**: Edite `app/about/page.tsx` para atualizar biografia e experiência
+- **Navegação**: Edite `components/Navigation.tsx` para alterar branding
 
-### Links
-Atualize os links de contato em:
-- `app/about/page.tsx` - Email, LinkedIn, GitHub
-- `app/projects/page.tsx` - Links dos projetos
+### Links e Contato
+Atualize em `app/about/page.tsx`:
+- LinkedIn: `https://www.linkedin.com/in/gbpadovan`
+- GitHub: `https://github.com/gbpadovan`
+
+Atualize em `app/projects/page.tsx`:
+- Links dos repositórios dos projetos
+- Links de demo/website dos projetos
 
 ## 📁 Estrutura do Projeto
 
@@ -150,4 +163,10 @@ MIT
 
 ## 👨‍💻 Autor
 
-Desenvolvido com ❤️ para demonstrar habilidades em web development.
+**Gustavo Padovan**
+- 📧 LinkedIn: [gbpadovan](https://www.linkedin.com/in/gbpadovan)
+- 🐙 GitHub: [@gbpadovan](https://github.com/gbpadovan)
+- 🎓 Formação: Administração (FEA-USP) + Data Analytics (Ironhack)
+- 💼 Buscando: Posição Junior em Python & Data Science
+
+Desenvolvido com ❤️ para demonstrar habilidades em web development, Python e Data Science.
