@@ -4,7 +4,18 @@ import { useState } from 'react'
 import { Github, ExternalLink } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
-const projectsByYear = {
+interface Project {
+  id: number
+  title: string
+  description: string
+  tags: string[]
+  image: string
+  github: string
+  demo: string
+  category: 'python' | 'outros'
+}
+
+const projectsByYear: Record<string, Project[]> = {
   '2019': [
     {
       id: 1,
@@ -155,7 +166,7 @@ export default function Projects() {
   const [filter, setFilter] = useState<'all' | 'python' | 'outros'>('all')
   const years = Object.keys(projectsByYear).sort().reverse()
 
-  const filterProjects = (projects: any[]) => {
+  const filterProjects = (projects: Project[]) => {
     if (filter === 'all') return projects
     return projects.filter(p => p.category === filter)
   }
