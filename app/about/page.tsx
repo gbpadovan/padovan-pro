@@ -1,6 +1,6 @@
 'use client'
 
-import { Mail, Linkedin, Github, Download } from 'lucide-react'
+import { Linkedin, Github } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
 export default function About() {
