@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 import { Github, ExternalLink } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
@@ -22,7 +23,7 @@ const projectsByYear: Record<string, Project[]> = {
       title: 'Ironhack Data Analyst Classes',
       description: 'Material e projetos do bootcamp Ironhack de Data Analyst em São Paulo. Inclui análises, visualizações e estudos de caso práticos.',
       tags: ['Python', 'Pandas', 'Data Analysis', 'Jupyter'],
-      image: 'bg-gradient-to-br from-blue-500 to-blue-600',
+      image: '/projects/ironhack.png',
       github: 'https://github.com/gbpadovan/ironhack2019SAODataAnalystClasses',
       demo: '',
       category: 'python',
@@ -32,7 +33,7 @@ const projectsByYear: Record<string, Project[]> = {
       title: 'Data Analysis & Machine Learning',
       description: 'Projetos de análise de dados e machine learning com aplicações práticas em datasets reais.',
       tags: ['Python', 'Scikit-learn', 'Pandas', 'ML'],
-      image: 'bg-gradient-to-br from-purple-500 to-purple-600',
+      image: '/projects/dataanalysis.png',
       github: 'https://github.com/gbpadovan/Data-Analysis-ML',
       demo: '',
       category: 'python',
@@ -44,7 +45,7 @@ const projectsByYear: Record<string, Project[]> = {
       title: 'KDP Rocket',
       description: 'Coletor automático de keywords para Amazon KDP. Automatiza a coleta de dados de palavras-chave usando web scraping e análise.',
       tags: ['Python', 'Selenium', 'Web Scraping', 'Automation'],
-      image: 'bg-gradient-to-br from-green-500 to-green-600',
+      image: '/projects/publisherrocket.png',
       github: 'https://github.com/gbpadovan/kdprocket',
       demo: '',
       category: 'python',
@@ -54,7 +55,7 @@ const projectsByYear: Record<string, Project[]> = {
       title: 'KDSpy',
       description: 'Ferramenta de análise de palavras-chave Amazon KDP com arquitetura robusta e processamento de dados avançado.',
       tags: ['Python', 'Selenium', 'Data Analysis', 'KDP'],
-      image: 'bg-gradient-to-br from-pink-500 to-pink-600',
+      image: '/projects/kindlespy.png',
       github: 'https://github.com/gbpadovan/kdspy',
       demo: '',
       category: 'python',
@@ -64,7 +65,7 @@ const projectsByYear: Record<string, Project[]> = {
       title: 'Face Generator Web Scrapping',
       description: 'Sistema de web scraping para coleta e processamento de imagens de faces com geração automática de datasets.',
       tags: ['Python', 'BeautifulSoup', 'Web Scraping', 'Image Processing'],
-      image: 'bg-gradient-to-br from-orange-500 to-orange-600',
+      image: '/projects/facewebscrapping.png',
       github: 'https://github.com/gbpadovan/face-generator-web-scrapping',
       demo: '',
       category: 'python',
@@ -76,7 +77,7 @@ const projectsByYear: Record<string, Project[]> = {
       title: 'SGD Accountability',
       description: 'Ferramenta de análise de dados de accountability para SGD Digital Tools. Inclui análise de campanhas Kindle, áudio e despesas de anúncios.',
       tags: ['Python', 'Jupyter', 'Data Analysis', 'Pandas'],
-      image: 'bg-gradient-to-br from-indigo-500 to-indigo-600',
+      image: '/projects/accountability.png',
       github: 'https://github.com/gbpadovan/sgd-accountability',
       demo: '',
       category: 'python',
@@ -88,7 +89,7 @@ const projectsByYear: Record<string, Project[]> = {
       title: 'PSK Website',
       description: 'Marketplace website para produtos automotivos. Plataforma de e-commerce com integração de banco de dados e sistema de pagamento.',
       tags: ['Django', 'PostgreSQL', 'Web Development', 'E-commerce'],
-      image: 'bg-gradient-to-br from-cyan-500 to-cyan-600',
+      image: '/projects/pskweb.png',
       github: 'https://github.com/gbpadovan/pskweb',
       demo: '',
       category: 'python',
@@ -98,7 +99,7 @@ const projectsByYear: Record<string, Project[]> = {
       title: 'Smart Contract Lottery',
       description: 'Contrato inteligente de loteria desenvolvido em Solidity. Implementa lógica de sorteio segura e transparente na blockchain.',
       tags: ['Solidity', 'Smart Contracts', 'Blockchain', 'Ethereum'],
-      image: 'bg-gradient-to-br from-amber-500 to-amber-600',
+      image: '/projects/smartcontractlottery.png',
       github: 'https://github.com/gbpadovan/smartcontract-lottery',
       demo: '',
       category: 'outros',
@@ -108,7 +109,7 @@ const projectsByYear: Record<string, Project[]> = {
       title: 'Brownie Fund Me',
       description: 'Projeto de crowdfunding descentralizado usando Solidity e Brownie. Demonstra interação com contratos inteligentes e web3.',
       tags: ['Solidity', 'Brownie', 'Web3', 'Smart Contracts'],
-      image: 'bg-gradient-to-br from-violet-500 to-violet-600',
+      image: '/projects/browniefundme.png',
       github: 'https://github.com/gbpadovan/brownie_fund_me',
       demo: '',
       category: 'outros',
@@ -120,7 +121,7 @@ const projectsByYear: Record<string, Project[]> = {
       title: 'CTG Indicator',
       description: 'Indicador técnico de análise para trading. Implementa análise Crypto to Gold com interpolação de dados e visualizações.',
       tags: ['Python', 'Trading', 'Technical Analysis', 'Data Science'],
-      image: 'bg-gradient-to-br from-yellow-500 to-yellow-600',
+      image: '/projects/ctgindicator.jpeg',
       github: 'https://github.com/gbpadovan/ctg_indicator',
       demo: '',
       category: 'python',
@@ -130,7 +131,7 @@ const projectsByYear: Record<string, Project[]> = {
       title: 'Amazon Ads Py',
       description: 'Gerador de relatórios de campanhas publicitárias usando Amazon REST API V3. Automatiza coleta e análise de dados de anúncios.',
       tags: ['Python', 'REST API', 'Amazon Ads', 'Automation'],
-      image: 'bg-gradient-to-br from-red-500 to-red-600',
+      image: '/projects/amz_ads.svg',
       github: 'https://github.com/gbpadovan/amz_ads_py',
       demo: '',
       category: 'python',
@@ -142,7 +143,7 @@ const projectsByYear: Record<string, Project[]> = {
       title: 'Boticário Web Scraper',
       description: 'Web scraper para coleta de dados de produtos Boticário. Extrai informações de perfumes e cosméticos com armazenamento em banco de dados.',
       tags: ['Python', 'Selenium', 'Web Scraping', 'SQLite'],
-      image: 'bg-gradient-to-br from-rose-500 to-rose-600',
+      image: '/projects/perfumews.png',
       github: 'https://github.com/gbpadovan/perfumews',
       demo: '',
       category: 'python',
@@ -154,7 +155,7 @@ const projectsByYear: Record<string, Project[]> = {
       title: 'MatchGenius',
       description: 'Assistente de IA para ajudar homens a atrair mulheres online com geração de mensagens personalizadas. Plataforma SaaS com análise de sucesso e otimização de perfil.',
       tags: ['React', 'Next.js', 'Supabase', 'Shadcn', 'AI', 'Vibe-Coding'],
-      image: 'bg-gradient-to-br from-pink-500 to-red-600',
+      image: '/projects/matchgenius.png',
       github: '',
       demo: 'https://www.matchgenius.app',
       category: 'outros',
@@ -229,7 +230,13 @@ export default function Projects() {
                   key={project.id}
                   className="group bg-gray-800/50 backdrop-blur border border-gray-700 rounded-xl overflow-hidden hover:border-purple-500 transition-all duration-300 hover:shadow-xl hover:shadow-purple-500/10"
                 >
-                  <div className={`h-48 ${project.image} relative overflow-hidden`}>
+                  <div className="h-48 relative overflow-hidden bg-gray-900">
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      fill
+                      className="object-contain group-hover:scale-105 transition-transform duration-300"
+                    />
                     <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
                   </div>
 
@@ -256,7 +263,7 @@ export default function Projects() {
                       <Button
                         variant="outline"
                         size="sm"
-                        className="flex-1 border-gray-600 text-gray-300 hover:bg-gray-700/50"
+                        className="flex-1 border-gray-600 text-black hover:bg-gray-700/50"
                         asChild
                       >
                         <a href={project.github} target="_blank" rel="noopener noreferrer">
